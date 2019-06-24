@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        header {
+            height: 80vh;
+            background: url(https://static.pexels.com/photos/5056/sky-sunset-night-space.jpeg) no-repeat center;
+            background-size: cover;
+
+            nav {
+                display: flex;
+                justify-content: flex-end;
+                padding: 2em;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        padding: 1em;
+                        text-decoration: none;
+                        color: #fff;
+
+                        &:hover {
+                            color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                }
+            }
+        }
+
+        @media all and (max-width: 800px) {
+            ul {
+                flex-grow: 1;
+                justify-content: space-around;
+            }
+        }
+
+        @media all and (max-width: 600px) {
+            ul {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
