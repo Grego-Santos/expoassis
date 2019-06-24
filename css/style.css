@@ -31,7 +31,7 @@ a {
     width: 100vw;
     height: 100px;
     transition-duration: 500ms;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 1);
     justify-content: center;
 }
 
@@ -68,15 +68,18 @@ a {
     display: flex;    
 }
 
-#main-slider {
-    
-
-}
-
 .slider-image {
     width: 100%;
 }
 
+
+.titulo-nunito {
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    padding-bottom: 20px;
+}
 
 #section-expo {
     display: flex;
@@ -86,14 +89,6 @@ a {
     padding: 50px;
     height: 500px;
     background-image: linear-gradient(to left top, #0043aa, #0d41ab, #173eac, #203cac, #2739ad, #3036ad, #3833ad, #3f2fac, #482aaa, #5125a9, #591ea6, #6015a4);
-}
-
-.titulo-nunito {
-    font-family: 'Nunito', sans-serif;
-    color: whitesmoke;
-    font-size: 2rem;
-    letter-spacing: 4px;
-    padding-bottom: 20px;
 }
 
 .section-expo-1 p {
@@ -112,7 +107,6 @@ a {
 #section-barraca {
     background-image: linear-gradient(to left bottom, #002084, #40228e, #642396, #84239c, #a224a0, #be2195, #d52889, #e7367c, #ee5163, #eb6d51, #e28848, #d59f4c);
     width: 100%;
-    height: 600px;
 }
 
 .section-barraca-1 {
@@ -120,7 +114,7 @@ a {
     flex-direction: column;
     padding: 50px;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .section-barraca-1 p {
@@ -130,8 +124,15 @@ a {
 }
 
 .container-flag {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-flag {
+    margin: 10px;
+    
 }
 
 /*/ Extra small devices (portrait phones, less than 576px)*/
@@ -143,5 +144,13 @@ a {
     #menubar {
         display: flex;
         flex-direction: column;
+    }
+
+    #section-expo {
+        flex-direction: column;
+    }
+
+    #section-expo-1 p {
+        width: 100%;
     }
  }
