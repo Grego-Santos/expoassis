@@ -17,6 +17,15 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2 {
+    text-shadow: 2px 2px 0px #898999;
+}
+
+p {
+    text-shadow: 1px 1px 0px #898999;
+}
+
 .logo {
     font-family: 'Permanent Marker', cursive;
     font-size: 2rem;
@@ -125,7 +134,7 @@ footer {
 #section-barraca {
     background-image: linear-gradient(to left bottom, #002084, #40228e, #642396, #84239c, #a224a0, #be2195, #d52889, #e7367c, #ee5163, #eb6d51, #e28848, #d59f4c);
     width: 100%;
-
+    box-shadow: #d52889 0px 0px 20px;
 }
 
 .section-barraca-1 {
@@ -152,7 +161,8 @@ footer {
 
 .box-flag {
     margin: 10px;
-    width: 100px;
+    width:  10%;
+    height: 10%;
 }
 
 #section-expositores {
@@ -161,8 +171,9 @@ footer {
     height: 100%;
     padding: 10%;
     display: flex;
-    background-image: linear-gradient(to bottom, #1d4681, #748ebc);
+    background-image: linear-gradient(to right top, #7ce7ad, #9ae19a, #b2da8d, #c6d385, #d7cb82, #e8be7d, #f6b180, #fea48b, #ff91a3, #ed88c6, #bd8ce7, #5f96fb);
     color: white;
+    box-shadow: #ee5163 0px 0px 20px;
 }
 
 .section-expositores-1>h1 {
@@ -189,24 +200,41 @@ footer {
     text-align: center;
     border-radius: 10px;
     height: 120px;
+    font-size: 1.5rem;
     width: 25%;
     margin: 20px;
     border-width: 1px;
     border-color: white;
-    border-radius: 20px;
+    border-radius: 100px;
     border-style: solid;
     cursor: pointer;
 }
 
+.box-colored {
+    border-image: linear-gradient(to left top, #1100c7, #720098, #86006e, #86004d, #7b0037) 1;
+    border-image-repeat: stretch;
+    border-radius: 0px;
+}
+
 .box-expositores:hover {
-    background-color: #002084;
-    border-style: none;
+    background-image: radial-gradient(circle, #7ce7ad, #89eab5, #95ecbc, #a1efc4, #adf1cb);
 }
 
 .desenvolvimento {
     color: white;
 }
 
+.mg {
+    margin: 2.5% 0px;
+}
+
+.line {
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right, #1100c7, #720098, #86006e, #86004d, #7b0037);
+    box-shadow: #002084 0px 0px 20px;
+    border-radius: 100px;
+}
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
@@ -302,5 +330,44 @@ footer {
     .section-expo-2>img {
         width: 90%;
         width: 80%;
+    }
+}
+
+@media (min-width: 2500px) {
+
+    #section-expo,
+    #section-barraca {
+        height: 100vh;
+    }
+
+    .titulo-nunito {
+        font-size: 15rem;
+    }
+
+    h2.titulo-nunito {
+        font-size: 10rem;
+    }
+
+    .section-expo-1>p {
+        font-size: 4rem;
+    }
+
+    .section-expo-2>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-barraca-1>p {
+        font-size: 3rem;
+    }
+
+    .section-expositores-1 p {
+        font-size: 2.5rem;
+        margin-bottom: 5%;
+    }
+
+    .box-expositores {
+        font-size: 2.5rem;
+        border-width: 5px;
     }
 }
