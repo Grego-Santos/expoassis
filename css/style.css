@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Permanent+Marker&display=swap');@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Permanent+Marker&display=swap');@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
 
 * {
     padding: 0px;
@@ -145,7 +146,7 @@ footer {
     font-size: 1.3rem;
 }
 
-.section-barraca-1 p {
+.section-barraca-1>p {
     text-indent: 1.5cm;
     text-align: justify;
     padding: 10px;
@@ -156,13 +157,27 @@ footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .box-flag {
-    margin: 10px;
-    width:  10%;
-    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+    width: 10%;
+}
+
+.box-flag>p {
+    text-shadow: none;
+    font-size: 90%;
 }
 
 #section-expositores {
@@ -228,6 +243,10 @@ footer {
     margin: 2.5% 0px;
 }
 
+.mg-t-100 {
+    padding-top: 100px;
+}
+
 .line {
     height: 5px;
     width: 100%;
@@ -235,6 +254,62 @@ footer {
     box-shadow: #002084 0px 0px 20px;
     border-radius: 100px;
 }
+
+.image-background {
+    position: fixed;
+    z-index: -1;
+    top: -300px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.color-title {
+    color: #7b0037;
+}
+
+.color-background-white {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#section-comidas-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.section-comidas-item {
+    display: flex;
+    margin: 10px 0px;
+    height: 350px;
+}
+
+.image-comidas-l {
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.image-comidas-r {
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.section-menu-alema {
+    height: 100%;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.italico-sm {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.nath {
+    display: flex;
+    height: 400px;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
@@ -256,6 +331,19 @@ footer {
         justify-content: center;
         margin-bottom: 25px;
     }
+}
+
+.titulo {
+    font-family: 'Carter One', cursive;
+    font-size: 3rem;
+    color:whitesmoke;
+    text-shadow: ghostwhite 2px 2px 5px;
+    margin: 20px;
+}
+
+#section-barraca-alema {
+    display: flex;
+    margin: 40px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -361,7 +449,7 @@ footer {
         font-size: 3rem;
     }
 
-    .section-expositores-1 p {
+    .section-expositores-1>p {
         font-size: 2.5rem;
         margin-bottom: 5%;
     }

@@ -12,6 +12,17 @@
     flex-direction: column;
 }
 
+.flex-column-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .justify-content-around {
     justify-content: space-around;
 }
