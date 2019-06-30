@@ -8,6 +8,11 @@
     <title>Expo Assis 2019</title>
 
     <!-- LIB's-->
+    <link rel="stylesheet" href="lib/OwlCarousel2-master/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel2-master/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="lib/OwlCarousel2-master/docs/assets/vendors/jquery.min.js"></script>
+    <script src="lib/OwlCarousel2-master/docs/assets/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- LOCAL -->
     <link rel="stylesheet" href="css/flexbox.css">
@@ -42,11 +47,19 @@
 
     <!-- MAIN CONTENT -->
     <main class="flex column">
-        <section id="main-slider" class="flex">
+        <!-- Set up your HTML -->
+        <div class="owl-carousel slider-image">
             <div class="">
-                <img class="slider-image" src="img/artista/capa-eduardocosta.jpg" alt="">
+                <img class="" src="img/artista/capa-eduardocosta.jpg" alt="">
             </div>
-        </section>
+            <div class="">
+                <img class="" src="img/artista/capa-racanegra.jpg" alt="">
+            </div>
+            <div class="">
+                <img class="" src="img/artista/capa-cesarmenottiefabiano.jpg" alt="">
+                
+            </div>
+        </div>
         <section id="section-expo">
             <div class="section-expo-1">
                 <h1 class="titulo-nunito">A EXPO</h1>
@@ -97,8 +110,9 @@
                     </a>
                     <a class="box-flag" href="src/barraca-espanhola.html">
                         <img src="img/icon/spain.svg" alt="">
-                        <p>Espanhola</p></a>
-                        <a class="box-flag" href="src/barraca-francesa.html">
+                        <p>Espanhola</p>
+                    </a>
+                    <a class="box-flag" href="src/barraca-francesa.html">
                         <img src="img/icon/france.svg" alt="">
                         <p>Francesa</p>
                     </a>
@@ -152,7 +166,8 @@
                 </div>
                 <div class="flex column flex-center">
                     <span class="line"></span>
-                    <a class="box-expositores box-colored" href="" style="color:#84239c;font-size: 1.5rem;">Pesquisar Produtos</a>
+                    <a class="box-expositores box-colored" href="" style="color:#84239c;font-size: 1.5rem;">Pesquisar
+                        Produtos</a>
                     <span class="line"></span>
                 </div>
             </div>
