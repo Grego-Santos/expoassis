@@ -280,7 +280,13 @@ footer {
 .section-comidas-item {
     display: flex;
     margin: 10px 0px;
-    height: 350px;
+}
+
+.section-menu-alema {
+    height: 360px;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .image-comidas-l {
@@ -293,21 +299,25 @@ footer {
     margin-right: 20px;
 }
 
-.section-menu-alema {
-    height: 100%;
-    font-size: 2rem;
-    border-radius: 10px;
-    padding: 20px;
-}
-
 .italico-sm {
     font-style: italic;
     font-size: 1rem;
 }
 
-.nath {
-    display: flex;
-    height: 400px;
+.espacamento {
+    line-height: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.invisible-font {
+    color: rgba(255, 255, 255, 0);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -334,10 +344,11 @@ footer {
 }
 
 .titulo {
+    text-align: center;
     font-family: 'Carter One', cursive;
     font-size: 3rem;
     color:whitesmoke;
-    text-shadow: ghostwhite 2px 2px 5px;
+    text-shadow: ghostwhite 2px 2px 2px;
     margin: 20px;
 }
 
