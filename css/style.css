@@ -431,6 +431,34 @@ footer {
 
 @media (min-width: 2500px) {
 
+    .header {
+        height: 200px;
+    }
+
+    .logo {
+        font-size: 5rem;
+    }
+
+    .item-menu {
+        font-size: 4rem;
+    }
+
+    .box-flag {
+        border-width: 0px;
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 4rem;
+    }
+
+    .box-flag:hover {
+        background-color: rgba(255, 255, 255);
+        color: tomato;
+    }
+
+    .btn-colaboradores {
+        font-size: 4rem;
+        height: 150px;
+    }
+
     #section-expo,
     #section-barraca {
         height: 100vh;
@@ -465,5 +493,31 @@ footer {
     .box-expositores {
         font-size: 2.5rem;
         border-width: 5px;
+    }
+
+    .titulo {
+        margin-top: 100px;
+        font-size: 10rem;
+    }
+
+    .section-menu-alema {
+        font-size: 4rem;
+        width: 48vw;
+        height: 38vh;
+        padding: 1vh 1vw;
+    }
+
+    .section-comidas-item {
+        width: 95vw;
+    }
+
+    .image-comidas-l,
+    .image-comidas-r {
+        width: 40vw;
+        height: 40vh;
+    }
+
+    .italico-sm {
+        font-size: 2rem;
     }
 }
