@@ -1,3 +1,7 @@
+### Situando
+Este projeto foi desenvolvido em 2019 para apresentar à um cliente, que seria utilizado como site oficial do evento Expo Assis. Na época não foi aprovado e é justificável o porquê.
+
+### Conteúdo antigo já tinha...
 O que falta
     Index:
         [] Menu superior com submenus
